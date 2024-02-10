@@ -143,6 +143,8 @@ nav > ul {
    width:576px;
    height:802px;
    padding:1.5rem 0;
+   min-width:320px;
+   min-height:426.84px;
    
 }
 
@@ -157,7 +159,7 @@ nav > ul {
     /* 1.5rem is the minimum font size.
         5vw + 1rem is the preferred font size based on the viewport's width.
         96px is the maximum font size. */
-    font-size: clamp(1.5rem, 5vw + 1rem, 96px); /* Adjust the values as needed */
+    font-size: clamp(1.5rem, 8vw, 96px); /* Adjust the values as needed */
     font-family: Lora;
     font-style: normal;
     font-weight: 500;
@@ -195,18 +197,23 @@ nav > ul {
     line-height: normal;
     padding:1.4rem 0;
     color:var(--primary-text-color);
+    width:58%;
 }
 
 /* home-yoga image container */
 .home-yoga-image {
     max-width: 600px; /* Maximum width of the image container */
     max-height: 802px; /* Maximum height of the image container */
+    min-width:320px;
+    min-height:426.84px;
+   
     
 }
 
 .home-yoga-image img {
     width: 100%; /* Make the width responsive to the container width */
     height:100%;
+  
 }
 
 .button-home{
@@ -243,7 +250,7 @@ nav > ul {
 
     /* D - big-font-size */
     font-family: Lora;
-    font-size: clamp(2rem, 4vw + 1rem, 56px); /* Example: minimum 2rem, preferred 4vw + 1rem, maximum 56px */
+    font-size: clamp(1.2rem, 5vw, 56px); /* Example: minimum 2rem, preferred 4vw + 1rem, maximum 56px */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -254,10 +261,15 @@ nav > ul {
 
     /* D - small-font-size */
     font-family: Poppins;
-    font-size: clamp(1rem, 2vw + 0.5rem, 14px); /* Example: minimum 1rem, preferred 2vw + 0.5rem, maximum 14px */
+    font-size: clamp(1.2rem, 5vw, 14px); /* Example: minimum 1rem, preferred 2vw + 0.5rem, maximum 14px */
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
+
+
+
+
+/* responsive */
 
