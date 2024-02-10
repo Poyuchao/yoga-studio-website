@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;   
+   }
+   
+   footer .container{
+    background-color: #1E0849;   
+   }
+   
+   .row{
+       display: flex;
+       justify-content: space-between;
+       padding: 40px 100px;
+   }
+   
+   .logo-area p{
+       padding: 10px;
+       color: #A197B4;
+       font-size: 16px;
+   }
+   
+   .footer-col h4{
+    color: #FFFFFF;
+    margin-bottom: 40px; 
+    font-size: 24px;
+    position: relative;  
+   }
+   
+   .footer-col p{
+       padding: 10px;
+       color: #A197B4;
+       font-size: 16px;
+   }
