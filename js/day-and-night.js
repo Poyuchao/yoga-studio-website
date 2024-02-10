@@ -1,3 +1,5 @@
+
+
 const toggleButton=document.getElementById('day-night');
 
 toggleButton.onclick = function(){
