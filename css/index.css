@@ -25,6 +25,7 @@ header {
     display: flex;
     justify-content: space-around;
     background-color:var(--primary-background-color);
+    padding:0rem 1rem;
    
 }
 
