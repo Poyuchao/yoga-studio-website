@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/day-and-night.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
 </head>
 
 <body>
@@ -17,31 +18,47 @@
 
         <!-- header -->
         <header>
+
             <div class="nav-bar">
-                <div class="logo-container">
+                <span class="logo-container">
                     <a class="nav-item" href="./index.html#home">Yoga</a>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="nav-li nav-home">
-                            <a class="nav-item" href="./index.html#home">Home</a>
-                        </li>
+                </span>
 
-                        <li class="nav-li">
-                            <a class="nav-item" href="./index.html#health">Health</a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-item" href="./index.html#routine">Routine</a>
-                        </li>
-                        <li class="nav-li">
-                            <a class="nav-item" href="./index.html#follow">Follow</a>
-                        </li>
 
+
+                <ul class="nav-menu">
+
+
+                    <li class="nav-li nav-home">
+                        <a class="nav-item" href="./index.html#home">Home</a>
+                    </li>
+
+                    <li class="nav-li">
+                        <a class="nav-item" href="./index.html#health">Health</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" href="./index.html#routine">Routine</a>
+                    </li>
+                    <li class="nav-li">
+                        <a class="nav-item" href="./index.html#follow">Follow</a>
+                    </li>
+                    <div class="daynight-toggle">
                         <img src="./img/hamburger-menu-moon.png" alt="Day-and-night-buttom" id="day-night">
+                        <img src="./img/burger-icon.png" alt="Menu" id="hamburger-menu">
+                    </div>
 
-                    </ul>
-                </nav>
+                    <div id="menu-items" class="menu-items">
+                        <a href="./index.html#home">Home</a>
+                        <a href="./index.html#health">Health</a>
+                        <a href="./index.html#routine">Routine</a>
+                        <a href="./index.html#follow">Follow</a>
+                    </div>
+                </ul>
+
+               
+
             </div>
+
         </header>
 
         <!--End of header-->
@@ -50,13 +67,16 @@
             <div class="home-container">
                 <div class="text-content">
                     <div class="text-content-container">
+
                         <h1>Choose Your <br><span class="rotate">Best</span><span class="yoga">Yoga</span><img
                                 src="./img/home-star1.png" alt="Yoga Icon" class="yoga-icon">Teacher</h1>
-                        <div class="text-content-p">
-                            <p>Calm your mind and body with the best yoga teachers available, relax your day and stay
-                                positive.
-                            </p>
-                        </div>
+
+
+
+                        <p>Calm your mind and body with the best yoga teachers available, relax your day and stay
+                            positive.
+                        </p>
+
                         <div class="move-home-button">
                             <button class="button-home">Get Started Free →</button>
                         </div>
