@@ -6,6 +6,10 @@
     /* background-color: #020ef833; */
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     height: 100vw;
     background-color: var(--primary-background-color);
@@ -588,16 +592,16 @@ header {
 @media (max-width:768px) {
 
     .list-section{
-        padding:8rem 1rem;
+        margin-top:10rem;
         width:100%;
-
+        padding:0 1rem;
     }
     .list 
     {
         width:100%;
         flex-direction: column;
         padding:1rem 1rem;
-        padding:1rem;
+        
     }
 
     .section-num-image{
@@ -647,4 +651,136 @@ header {
     }
 
     
+}
+
+/* End of list section */
+
+
+
+
+.health{
+    width:100%;
+    padding:3rem 164px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.health-hero-image{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.health-hero{
+   
+   max-width:100%;
+   height:auto;
+   min-width:320px;
+}
+
+.health-text-container{
+  
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    gap: 40px; /* Adjust the gap as needed, e.g., 20px */
+   
+}
+
+.health-text-container>h1{
+    color: var(--primary-text-color);
+    
+    font-family: Lora;
+    font-size: clamp(32px,5vw,64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:579px;
+    max-width:100%;
+    height:auto;
+    min-width:289px;
+}
+
+.health-text-container>p{
+    color: var(--primary-text-color);
+    font-family: Poppins;
+    font-size: clamp(15px,5vw,16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:579px;
+    max-width:100%;
+    height:auto;
+    min-width:331px;
+}
+
+
+
+.health-home{
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    cursor: pointer;
+    color:#fff;
+    border:none;
+    width:163px;
+    max-width:100%;
+    height:auto;
+    min-width:158px;
+    font-family: Poppins;
+    font-size: clamp(12,5vw,16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+
+
+@media(max-width:768px){
+    
+
+    .health
+    {
+     
+        flex-direction: column;
+       
+        margin-top:6rem;
+    }
+
+    .health-hero-image{
+        order:10;
+    }
+
+    .health-text-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .health-text-container>h1 {
+        width: auto; /* or a specific smaller pixel value, or percentage to match container*/
+        text-align: center;
+        
+    }
+
+    .health-text-container>p{
+        width: auto; 
+        text-align: center;
+    }
+
+   
+
+    .health-home{
+        width:auto;
+    
+    }
 }
