@@ -23,7 +23,7 @@ function layoutResize() {
         // If screen is wider than 768px, hide the menu and switch to burger icon
         if(window.innerWidth > 768){
             menu.style.display = 'none'; // Make sure to hide the menu on large screens
-            menuIcon.src = './img/burger-icon.png';
+            menuIcon.src = './img/burger-icon-night.png';
         } else {
             // Optional: Define behavior for smaller screens if necessary
         }
