@@ -81,11 +81,3 @@
     font-size: 16px;
 }
 
-@media only screen and (max-width: 767px) {
-    .content-all,
-    .row-1,
-    .row-2,
-    .row-3 {
-        padding: 10px;
-    }
-}

@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    background: #F5F0FF;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 80px;
+}
+
+.page2-col:nth-child(3) {
+    flex: 2; /* can put any other ratio you desire */
+}
+
+.page2-col {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+
+.page2-col h2 {
+    font-size: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page2-col p {
+    color: #4B3E65;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.page2-col p::before {
+    content: ''; /* Must have a content property */
+    background: url('../img/liststar-2-img.png') center center no-repeat; /* Replace with the actual path to your image */
+    background-size: cover; /* or contain, adjust as needed */
+    width: 64px; /* Adjust the image width */
+    height: 72.86px; /* Adjust the image height */
+    position: absolute;
+    top: -45px;
+    left: 25px;
+}
+
+
+.page2-col button {
+    width: 150px;
+    height: 143px;
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding */
+}

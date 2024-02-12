@@ -13,7 +13,7 @@ body{
 }
 
 .newsletter{
-    background: linear-gradient(125deg,#FF51AF,#8B52FF);
+    background: linear-gradient(125deg,#FF51AF,#8B52FF);/* Creating Gradient Colors */
     width: 992px;
     height: 374px;
     text-align: center;
@@ -27,21 +27,15 @@ body{
 .newsletter h1{
     color: #FFFFFF;
     font-size: 56px;
-    width: 511px;
-    height: 72px;
     margin-top: 30px;
 }
 
 .newsletter p{
     color: #FFFFFF;
     font-size: 15px;
-    width: 567px;
-    height: 46px;
 }
 
 .text-box{
-    width: 529px;
-    height: 72px;
     background: #FFFFFF;
     border-radius: 40px;
     position: relative;
@@ -61,7 +55,7 @@ body{
 }
 
 .text-box button{
-    background: linear-gradient(125deg,#FF51AF,#8B52FF);
+    background: linear-gradient(125deg,#FF51AF,#8B52FF);/* Creating Gradient Colors */
     border: 0;
     width: 150px;
     height: 60px;
