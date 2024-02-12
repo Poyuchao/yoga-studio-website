@@ -11,11 +11,11 @@ toggleButton.onclick = function(){
         toggleButton.alt="Switch to day mode";
          // Change routineImg for night mode
         routineImg.src = "./img/dark-routine.png"; // Path to your night image
-        burger.src="./img/burger-icon.png";
+        // burger.src="./img/burger-icon.png";
     }else{
         toggleButton.src="./img/hamburger-menu-moon.png";
         toggleButton.alt="switch to night mode"
         routineImg.src = "./img/day-routine.png"; // Path to your night image
-        burger.src="./img/burger-icon-night.png"
+        // burger.src="./img/burger-icon-night.png"
     }
 }
