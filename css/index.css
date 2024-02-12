@@ -13,6 +13,7 @@ html {
 body {
     height: 100vw;
     background-color: var(--primary-background-color);
+    transition: background-color 0.5s ease;
 }
 
 :root {
@@ -42,7 +43,7 @@ header {
     /* Ensures the header is always on top of other content */
     font-family: 'Poppins';
     background-color: var(--primary-background-color);
-
+    transition: background-color 0.5s ease;
     height: 88px;
 }
 
@@ -57,6 +58,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: background-color 0.5s ease;
 }
 
 .nav-menu {
@@ -107,7 +109,7 @@ header {
     left: 0;
     z-index: 2000;
     /* Ensure it's above other content */
-
+   
 }
 
 
@@ -120,7 +122,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-
+   
 }
 
 
@@ -174,7 +176,8 @@ header {
 .section-Home {
     background-color: var(--primary-background-color);
     width: 100%;
-
+    transition: background-color 0.5s ease;
+    
 }
 
 .home-container {
@@ -492,6 +495,7 @@ header {
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    transition: background-color 0.5s ease;
 }
 
 
@@ -742,6 +746,7 @@ header {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    
 }
 
 
@@ -917,4 +922,153 @@ header {
         width:auto;
     
     }
+}
+
+
+/* End of routine section */
+
+
+/* follow section */
+
+
+
+.follow-section-container{
+    padding:3rem 1rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* This sets a gap between all flex children */
+
+}
+
+
+.yoga-container-top{
+    display:flex;
+    padding-right:186px;
+    padding-left:160px;
+    justify-content:center;
+    align-items: center;
+    gap:40px;
+}
+
+.yoga-container-bottom{
+    padding:0 171px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+.yoga-animation-top{
+    width:280px;
+    max-width: 100%;
+    height:auto;
+    min-width:140px;
+}
+
+.yoga-animation-bottom{
+    width:500px;
+    max-width: 100%;
+    height:auto;
+    min-width:230px;
+}
+
+.follow-text-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    width:396px;
+    max-width: 100%;
+    height:auto;
+    min-width:225px;
+    padding-top:8rem;
+}
+
+.follow-text-container >h1{
+    color: var(--primary-text-color);
+    text-align: center;
+    
+    /* D - bigger-font-size */
+    font-family: Lora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.follow-text-container .hashtag {
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline; /* This ensures the hashtag stays in line with the rest of the h1 text */
+}
+
+.follow-btn{
+    display: inline-flex;
+    height: 88px;
+    width:88px;
+    padding: 17px 17px 16px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    border:none;
+    color:  #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Adjusted for a slower fade-in animation */
+.follow-section-container, .yoga-animation-top, .yoga-animation-bottom, .follow-text-container{
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out; /* Slower transition */
+}
+
+/* State after scrolling into view remains the same */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Pulse animation for the each button */
+@keyframes follow-botton-pulse {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.follow-btn {
+    animation: follow-botton-pulse  2s infinite;
+}
+
+.routine-home{
+    animation: follow-botton-pulse  2s infinite;
+}
+
+.health-home{
+    animation: follow-botton-pulse  2s infinite;
+}
+
+.button-home{
+    animation: follow-botton-pulse  2s infinite;
+}
+
+#day-night{
+    animation: follow-botton-pulse  2s infinite;
 }
