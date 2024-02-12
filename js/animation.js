@@ -1,3 +1,5 @@
+/*fade in animation*/
+
 document.addEventListener('DOMContentLoaded', () => {
     // Setup the Intersection Observer
     const observer = new IntersectionObserver((entries, observer) => {
