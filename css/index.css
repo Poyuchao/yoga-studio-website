@@ -638,7 +638,8 @@ header {
     .next-button-container img{
         width: 100%;
         height:auto;
-        min-width: 150px;;
+        min-width: 150px;
+        margin-bottom:2rem;
     }
   
    
@@ -657,6 +658,7 @@ header {
 
 
 
+/*health section*/
 
 .health{
     width:100%;
@@ -673,6 +675,7 @@ header {
     justify-content: center;
     align-items: center;
     padding:1rem;
+    margin-bottom:2rem;
 }
 
 .health-hero{
@@ -764,6 +767,7 @@ header {
         display:flex;
         flex-direction: column;
         align-items: center;
+        gap:20px;
     }
 
     .health-text-container>h1 {
@@ -783,4 +787,16 @@ header {
         width:auto;
     
     }
+}
+
+
+/* end of health section */
+
+.routine{
+    width:100%;
+    padding:3rem 166px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
 }
