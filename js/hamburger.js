@@ -5,11 +5,11 @@ document.getElementById('hamburger-menu').addEventListener('click', function() {
     if (menu.style.display === 'none') {
         menu.style.display = 'block';
         // Change the icon to the close icon
-        menuIcon.src = '../img/Vector-close-correct.png';
+        menuIcon.src = './img/Vector-close-correct.png';
     } else {
         menu.style.display = 'none';
         // Change the icon back to the hamburger menu icon
-        menuIcon.src = '../img/burger-icon.png';
+        menuIcon.src = './img/burger-icon.png';
     }
 });
 
@@ -23,7 +23,7 @@ function layoutResize() {
         // If screen is wider than 768px, hide the menu and switch to burger icon
         if(window.innerWidth > 768){
             menu.style.display = 'none'; // Make sure to hide the menu on large screens
-            menuIcon.src = '../img/burger-icon.png';
+            menuIcon.src = './img/burger-icon.png';
         } else {
             // Optional: Define behavior for smaller screens if necessary
         }

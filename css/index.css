@@ -344,7 +344,7 @@ header {
     #hamburger-menu {
         /* Show the hamburger icon */
         display: block;
-
+    
     }
 
     .daynight-toggle {
@@ -675,7 +675,7 @@ header {
     justify-content: center;
     align-items: center;
     padding:1rem;
-    margin-bottom:2rem;
+   
 }
 
 .health-hero{
@@ -799,4 +799,122 @@ header {
     justify-content: center;
     align-items: center;
     gap:4rem;
+    
+}
+
+
+
+.routine-text-container{
+  
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    gap: 40px; /* Adjust the gap as needed, e.g., 20px */
+   
+}
+
+.routine-text-container>h1{
+    color: var(--primary-text-color);
+    
+    font-family: Lora;
+    font-size: clamp(32px,5vw,64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:396px;
+    max-width:100%;
+    height:auto;
+    min-width:295px;
+}
+
+.routine-text-container>p{
+    color: var(--primary-text-color);
+    font-family: Poppins;
+    font-size: clamp(15px,5vw,16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width:465px;
+    max-width:100%;
+    height:auto;
+    min-width:331px;
+}
+
+
+.routine-home{
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    cursor: pointer;
+    color:#fff;
+    border:none;
+    width:214px;
+    max-width:100%;
+    height:auto;
+    min-width:158px;
+    font-family: Poppins;
+    font-size: clamp(12,5vw,16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.routine-hero-image{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    margin-bottom:2rem;
+}
+
+.routine-hero{
+    
+    max-width:100%;
+    height:auto;
+    min-width:300px;
+ }
+ 
+
+ @media(max-width:768px){
+    
+
+    .routine
+    {
+     
+        flex-direction: column;
+       
+        
+    }
+
+    
+
+    .routine-text-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+
+    .routine-text-container>h1 {
+        width: auto; /* or a specific smaller pixel value, or percentage to match container*/
+        text-align: center;
+        
+    }
+
+    .routine-text-container>p{
+        width: auto; 
+        text-align: center;
+    }
+
+   
+
+    .routine-home{
+        width:auto;
+    
+    }
 }
