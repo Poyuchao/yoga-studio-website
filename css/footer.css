@@ -2,33 +2,44 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
 }
 
-footer .container {
+.container {
     background-color: #1E0849;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 100px;
+.content-all{
+    padding: 64px 0px 64px 0px;
 }
 
-.divider {
-    width: 1500px;
-    height: 0.5px;
-    background-color: #FFFFFF;
-    content: "";
-    margin: 0 auto;
-    display: block;
-    text-align: center;
+.row-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 110px 50px 110px;
+}
+
+.logo-area{
+    max-width: 244px;
+    max-height: 143px;
+}
+
+.logo-name{
+    padding-bottom: 40px;
 }
 
 .logo-area p {
-    padding: 10px;
+    padding: 0px 10px 0px 0px;
     color: #A197B4;
     font-size: 16px;
+    line-height: 25px;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-between;
+    width: 606px;
+    height: 119px;
+    padding-bottom: 10px;
 }
 
 .footer-col h4 {
@@ -39,13 +50,42 @@ footer .container {
 }
 
 .footer-col p {
+    color: #A197B4;
+    font-size: 16px;
+    padding-bottom: 0px;
+}
+
+.divider {
+    width: 1120px;
+    height: 0.5px;
+    background-color: #FFFFFF;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.row-3{
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px 0px 110px;
+}
+
+.social-icons img{
+    margin-right: 22px;
+    font-size: 24px;
+}
+.footer-bottom {
     padding: 10px;
     color: #A197B4;
     font-size: 16px;
 }
 
-.footer-bottom {
-    padding: 10px;
-    color: #A197B4;
-    font-size: 16px;
+@media only screen and (max-width: 767px) {
+    .content-all,
+    .row-1,
+    .row-2,
+    .row-3 {
+        padding: 10px;
+    }
 }
