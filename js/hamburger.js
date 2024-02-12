@@ -9,7 +9,7 @@ document.getElementById('hamburger-menu').addEventListener('click', function() {
     } else {
         menu.style.display = 'none';
         // Change the icon back to the hamburger menu icon
-        menuIcon.src = './img/burger-icon.png';
+        menuIcon.src = './img/burger-icon-night.png';
     }
 });
 
