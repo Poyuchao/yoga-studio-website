@@ -1,0 +1,1478 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: solid 1px black; */
+    /* background-color: #020ef833; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vw;
+    background-color: var(--primary-background-color);
+    transition: background-color 0.5s ease;
+}
+
+:root {
+    --primary-background-color: #F5F0FF;
+    --primary-text-color: #220953;
+    --burger-menu-background: rgba(255, 255, 255, 0.30);
+}
+
+body.night-mode {
+    --primary-background-color: #14092A;
+    --primary-text-color: #D1C0F1;
+    --burger-menu-background: rgba(26, 26, 26, 0.30);
+
+}
+
+
+
+/* header */
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Ensures the header is always on top of other content */
+    font-family: 'Poppins';
+    background-color: var(--primary-background-color);
+    transition: background-color 0.5s ease;
+    height: 88px;
+}
+
+.nav-bar {
+    position: relative;
+    height: 100%;
+    max-width: 1440px;
+    width: 100%;
+    background-color: var(--primary-background-color);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s ease;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+/*hamburger-menu*/
+#hamburger-menu {
+    display: none;
+}
+
+.menu-items {
+    display: none;
+    width: 100%;
+}
+
+.menu-items a {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    text-decoration: none;
+    color: var(--primary-text-color);
+
+
+}
+
+/* If the "Home" link is always the first link */
+.menu-items a:nth-child(1) {
+    background: linear-gradient(73.19deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.menu-items {
+    display: none;
+    /* Hide by default */
+    width: 100%;
+    /* Make the menu fit the screen width */
+    height: 550px;
+    background: var(--burger-menu-background);
+    backdrop-filter: blur(16px);
+    position: absolute;
+    /* Position it on top of other content */
+    top: 88px;
+    left: 0;
+    z-index: 2000;
+    /* Ensure it's above other content */
+
+}
+
+
+
+
+.logo-container>a {
+    font-weight: 500;
+    font-size: 24px;
+    background: linear-gradient(73.19deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+
+
+.nav-li,
+.nav-li>a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    color: var(--primary-text-color);
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+.nav-bar nav ul li.nav-home a.nav-item {
+    background: linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    /* Define your gradient here */
+    -webkit-background-clip: text;
+    /* This is for WebKit browsers */
+    background-clip: text;
+    /* The standard property, for future compatibility */
+    color: transparent;
+    /* Make the text color transparent so the gradient is visible */
+    display: inline-block;
+    /* Required for some browsers to correctly apply the gradient */
+}
+
+#day-night {
+    position: relative;
+
+    cursor: pointer;
+
+
+    padding: 0 1rem;
+    transition: 0.3s ease-in-out;
+}
+
+#hamburger-menu {
+    transition: 0.3s ease-in-out;
+    width: 20px;
+    height: 20px;
+}
+
+/*end of header*/
+
+/* home section*/
+
+.section-Home {
+    background-color: var(--primary-background-color);
+    width: 100%;
+    transition: background-color 0.5s ease;
+
+}
+
+.home-container {
+    width: 100%;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+
+}
+
+.text-content {
+    width: 40%;
+    height: 60%;
+    padding: 1.5rem 0;
+    min-width: 320px;
+    min-height: 426.84px;
+
+}
+
+.text-content-container {
+    position: relative;
+    left: 10%;
+    top: 5%;
+}
+
+
+.text-content-container>h1 {
+    /* 1.5rem is the minimum font size.
+        5vw + 1rem is the preferred font size based on the viewport's width.
+        96px is the maximum font size. */
+    font-size: clamp(1.5rem, 8vw, 96px);
+    /* Adjust the values as needed */
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    /* 124.8px */
+    color: var(--primary-text-color);
+
+}
+
+/* home star */
+.yoga-icon {
+    margin-left: 5%;
+    width: auto;
+    height: auto;
+    /* This helps to align the image nicely with the text */
+    vertical-align: middle;
+}
+
+
+
+
+.yoga {
+    color: #FFF;
+    background: linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%);
+    /* Define your gradient here */
+    border-radius: 20px;
+    display: inline-block;
+    /* Needed to transform inline elements */
+    transform: rotate(10deg);
+    /* Adjust the angle as needed */
+    margin-left: 20px;
+}
+
+.text-content-container>p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1.4rem 0;
+    color: var(--primary-text-color);
+    width: 58%;
+}
+
+/* home-yoga image container */
+.home-yoga-image {
+    max-width: 60%;
+    /* Maximum width of the image container */
+    max-height: 84%;
+    /* Maximum height of the image container */
+
+}
+
+.home-yoga-image img {
+    width: 100%;
+    /* Make the width responsive to the container width */
+    height: 100%;
+
+}
+
+.button-home {
+    color: #FFF;
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    border: none;
+}
+
+
+
+
+.statistics {
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    position: relative;
+    top: 2.5rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    color: var(--primary-text-color);
+
+    /* D - big-font-size */
+    font-family: Lora;
+    font-size: clamp(1.2rem, 5vw, 56px);
+    /* Example: minimum 2rem, preferred 4vw + 1rem, maximum 56px */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stat-text {
+    color: var(--primary-text-color);
+
+    /* D - small-font-size */
+    font-family: Poppins;
+    font-size: clamp(1.2rem, 5vw, 14px);
+    /* Example: minimum 1rem, preferred 2vw + 0.5rem, maximum 14px */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+@media (max-width:768px) {
+
+    .nav-bar {
+        padding: 0 4rem;
+    }
+
+    .nav-li {
+        display: none;
+    }
+
+
+
+    /* hamburger menu  */
+    #hamburger-menu {
+        /* Show the hamburger icon */
+        display: block;
+
+    }
+
+    .daynight-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.4rem;
+
+    }
+
+    /*home section*/
+    .home-container {
+        display: flex;
+        /* Use Flexbox */
+
+        flex-direction: column;
+
+    }
+
+    .home-yoga-image {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 180px;
+        height: auto;
+    }
+
+    .text-content-container p {
+        position: relative;
+        left: 10%;
+        text-align: center;
+    }
+
+
+    .move-home-button {
+
+        width: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .number {
+        font-size: 40px;
+    }
+
+    .stat-text {
+        font-size: 20px;
+    }
+
+    /* End of home section*/
+
+}
+
+
+/* responsive */
+@media (max-width:377px) {
+
+    /*hamburger*/
+    .nav-toggle {
+        display: none;
+    }
+
+    /*home section*/
+    .home-container {
+        display: flex;
+        /* Use Flexbox */
+
+        flex-direction: column;
+
+    }
+
+    .text-content {
+        width: 100%;
+        display: flex;
+        /* Use Flexbox */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .text-content-container {
+        padding: 0 10px;
+        flex-direction: column;
+
+
+    }
+
+    .text-content-container>h1 {
+        font-size: 55px;
+        width: 90%;
+
+    }
+
+    .text-content-container p {
+        position: relative;
+        font-size: 13px;
+        left: 50px;
+        text-align: center;
+    }
+
+    .move-home-button {
+
+        width: 80%;
+        position: relative;
+        left: 60px;
+    }
+
+    .statistics {
+        display: flex;
+        position: relative;
+        left: 50px;
+    }
+
+    .number {
+        font-size: 28px;
+    }
+
+    .stat-text {
+        font-size: 14px;
+    }
+
+
+    .home-yoga-image {
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 320px;
+        position: relative;
+        left: 15px;
+    }
+
+
+}
+
+/* End of home section*/
+
+
+/* list-section*/
+.list-section {
+    width: 100%;
+    background-color: var(--primary-background-color);
+    padding: 4rem 1rem;
+    display: flex;
+    /* Enable flexbox */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    transition: background-color 0.5s ease;
+}
+
+
+.list {
+    height: 230px;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 8rem;
+    gap: 3rem;
+    position: relative;
+
+}
+
+.section-num-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    min-width: 180px;
+}
+
+.section-num-image>h1 {
+    color: var(--primary-text-color);
+    font-family: Lora;
+    /* The syntax for clamp() is clamp(min, val, max), where min is the minimum value, 
+    val is the preferred value (usually a flexible unit like vw for viewport width), 
+    and max is the maximum value. */
+    font-size: clamp(28px, 5vw, 56px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.list-image {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    min-width: 230px;
+}
+
+
+
+.list-text-container {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+
+
+}
+
+.text-background-container {
+    padding: 20px;
+    background-image: url("../img/liststar-2-img.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.text-background-container>p {
+    padding: 10px;
+    color: var(--primary-text-color);
+    font-family: Poppins;
+    font-size: clamp(12px, 6vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--primary-text-color);
+
+    z-index: 2;
+}
+
+.list-star {
+    position: absolute;
+    left: 4%;
+    top: 10%;
+    max-width: 100%;
+    height: auto;
+    min-width: 50px;
+
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+
+    .list-section {
+        margin-top: 10rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .list {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 1rem;
+
+    }
+
+    .section-num-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .list-text-container {
+        flex-direction: column;
+
+
+    }
+
+    .list-text-container span {
+        display: block;
+    }
+
+    .list-image {
+        width: 60%;
+        height: auto;
+
+    }
+
+    .text-background-container {
+        width: 100%;
+        height: auto;
+        min-width: 328px;
+        ;
+        text-align: center;
+    }
+
+
+    .next-button-container img {
+        width: 100%;
+        height: auto;
+        min-width: 150px;
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+
+@media (max-width:377) {
+    .list-section {
+        position: relative;
+    }
+
+
+}
+
+/* End of list section */
+
+
+
+/*health section*/
+
+.health {
+    width: 100%;
+    padding: 3rem 164px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.health-hero-image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.health-hero {
+
+    max-width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+
+.health-text-container {
+
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    gap: 40px;
+    /* Adjust the gap as needed, e.g., 20px */
+
+}
+
+.health-text-container>h1 {
+    color: var(--primary-text-color);
+
+    font-family: Lora;
+    font-size: clamp(32px, 5vw, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 579px;
+    max-width: 100%;
+    height: auto;
+    min-width: 289px;
+}
+
+.health-text-container>p {
+    color: var(--primary-text-color);
+    font-family: Poppins;
+    font-size: clamp(15px, 5vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 579px;
+    max-width: 100%;
+    height: auto;
+    min-width: 331px;
+}
+
+
+
+.health-home {
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    width: 163px;
+    max-width: 100%;
+    height: auto;
+    min-width: 158px;
+    font-family: Poppins;
+    font-size: clamp(12, 5vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+
+
+
+
+@media(max-width:768px) {
+
+
+    .health {
+
+        flex-direction: column;
+
+        margin-top: 6rem;
+    }
+
+    .health-hero-image {
+        order: 10;
+    }
+
+    .health-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .health-text-container>h1 {
+        width: auto;
+        /* or a specific smaller pixel value, or percentage to match container*/
+        text-align: center;
+
+    }
+
+    .health-text-container>p {
+        width: auto;
+        text-align: center;
+    }
+
+
+
+    .health-home {
+        width: auto;
+
+    }
+}
+
+
+/* end of health section */
+
+.routine {
+    width: 100%;
+    padding: 3rem 166px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+}
+
+
+
+.routine-text-container {
+
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    gap: 40px;
+    /* Adjust the gap as needed, e.g., 20px */
+
+}
+
+.routine-text-container>h1 {
+    color: var(--primary-text-color);
+
+    font-family: Lora;
+    font-size: clamp(32px, 5vw, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 396px;
+    max-width: 100%;
+    height: auto;
+    min-width: 295px;
+}
+
+.routine-text-container>p {
+    color: var(--primary-text-color);
+    font-family: Poppins;
+    font-size: clamp(15px, 5vw, 16px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 465px;
+    max-width: 100%;
+    height: auto;
+    min-width: 331px;
+}
+
+
+.routine-home {
+    display: inline-flex;
+    padding: 16px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    width: 214px;
+    max-width: 100%;
+    height: auto;
+    min-width: 158px;
+    font-family: Poppins;
+    font-size: clamp(12, 5vw, 16px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.routine-hero-image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.routine-hero {
+
+    max-width: 100%;
+    height: auto;
+    min-width: 300px;
+}
+
+
+@media(max-width:768px) {
+
+
+    .routine {
+
+        flex-direction: column;
+
+
+    }
+
+
+
+    .routine-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .routine-text-container>h1 {
+        width: auto;
+        /* or a specific smaller pixel value, or percentage to match container*/
+        text-align: center;
+
+    }
+
+    .routine-text-container>p {
+        width: auto;
+        text-align: center;
+    }
+
+
+
+    .routine-home {
+        width: auto;
+
+    }
+}
+
+
+/* End of routine section */
+
+
+/* follow section */
+
+
+
+.follow-section-container {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    /* This sets a gap between all flex children */
+
+}
+
+
+.yoga-container-top {
+    display: flex;
+    padding-right: 186px;
+    padding-left: 160px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.yoga-container-bottom {
+    padding: 0 171px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.yoga-animation-top {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    min-width: 140px;
+}
+
+.yoga-animation-bottom {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    min-width: 230px;
+}
+
+.follow-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 396px;
+    max-width: 100%;
+    height: auto;
+    min-width: 225px;
+    padding-top: 8rem;
+    gap: 1rem;
+}
+
+.follow-text-container>h1 {
+    color: var(--primary-text-color);
+    text-align: center;
+
+    /* D - bigger-font-size */
+    font-family: Lora;
+    font-size: clamp(32px, 5vw, 64px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.follow-text-container .hashtag {
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    /* This ensures the hashtag stays in line with the rest of the h1 text */
+}
+
+.follow-btn {
+    display: inline-flex;
+    height: 88px;
+    width: 88px;
+    padding: 17px 17px 16px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    flex-shrink: 0;
+    border-radius: 64px;
+    background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Adjusted for a slower fade-in animation */
+.follow-section-container,
+.yoga-animation-top,
+.yoga-animation-bottom,
+.follow-text-container {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    /* Slower transition */
+}
+
+/* State after scrolling into view remains the same */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Pulse animation for the each button */
+@keyframes follow-botton-pulse {
+    0% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+.follow-btn {
+    animation: follow-botton-pulse 2s infinite;
+}
+
+.routine-home {
+    animation: follow-botton-pulse 2s infinite;
+}
+
+.health-home {
+    animation: follow-botton-pulse 2s infinite;
+}
+
+.button-home {
+    animation: follow-botton-pulse 2s infinite;
+}
+
+#day-night {
+    animation: follow-botton-pulse 2s infinite;
+}
+
+/*review this*/
+@media (max-width:768px) {
+    .follow-section-container {
+        /* Stack elements vertically */
+        flex-direction: column;
+        align-items: center;
+        /* Center-align the child elements */
+    }
+
+    .yoga-container-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* Two columns of equal width */
+
+        width: auto;
+        gap: 10px;
+        /* Space between grid items */
+        padding: 0;
+    }
+
+    .follow-text-container .hashtag {
+        display: block;
+        /* Forces "#YOGA" to the next line on smaller screens */
+    }
+
+    .follow-text-container {
+        grid-column: 1 / -1;
+        /* Span across all columns */
+        grid-row: 1;
+        /* Place in the first row */
+        padding: 1rem;
+        /* Adjust padding as needed */
+        width: auto;
+        text-align: center;
+    }
+
+    .yoga-container-top img.yoga-animation-top {
+        width: 100%;
+        /* Each image takes full width of its grid column */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .yoga-container-top img:nth-child(2) {
+        grid-row: 2;
+        /* Place second element (first image) in the second row */
+        grid-column: 1;
+        /* Place in the first column */
+    }
+
+    .yoga-container-top img:nth-child(3) {
+        grid-row: 2;
+        /* Place third element (second image) in the second row */
+        grid-column: 2;
+        /* Place in the second column */
+    }
+
+    .yoga-container-top img {
+        width: calc(50% - 5px);
+        /* Adjust width to fit two images in one line */
+        margin-bottom: 0;
+        /* Remove bottom margin if not needed */
+        padding: 1rem;
+    }
+
+    .follow-text-container {
+        width: 100%;
+        /* Full width */
+        padding: 2rem 1rem;
+        order: -1;
+        /* This will ensure the text container goes to the top */
+    }
+
+    /* Optional: If images don't fit side by side, make them stack instead */
+    .yoga-animation-top {
+        order: 0;
+        /* Ensure the images stay in source order */
+        /* Reset width if necessary, or keep it to control the size of the images */
+        width: auto;
+    }
+
+    .yoga-animation-bottom {
+        width: auto;
+
+    }
+
+    .yoga-container-bottom {
+        flex-direction: column;
+        /* Keep the bottom images stacked */
+        align-items: center;
+        width: auto;
+        /* Adjust based on your layout preference */
+        padding: 1rem;
+    }
+
+
+}
+
+/*Newsletter Section*/
+
+.newsletter-section {
+    background-color: var(--primary-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 14rem;
+}
+
+.newsletter-container {
+    background: linear-gradient(125deg, #FF51AF, #8B52FF);
+    /* Creating Gradient Colors */
+    width: 992px;
+    max-width: 100%;
+    min-width: 328px;
+    height: auto;
+    text-align: center;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 14rem;
+}
+
+.newsletter-content {
+    width: 567px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+
+}
+
+.newsletter-container h1 {
+    color: #FFFFFF;
+    font-size: clamp(28px, 5vw, 56px);
+    width: 511px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+
+}
+
+.newsletter-container p {
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 567px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+}
+
+.text-box {
+    background: #FFFFFF;
+    border-radius: 40px;
+    position: relative;
+    margin-top: 20px;
+    width: 528px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+.text-box input {
+    width: 528px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+    border-radius: 40px;
+    border: 0;
+    background: none;
+    padding: 26px 0;
+    margin-left: 24px;
+    margin-right: 28px;
+    font-size: 15px;
+}
+
+.text-box button {
+    background: linear-gradient(125deg, #FF51AF, #8B52FF);
+    /* Creating Gradient Colors */
+    border: 0;
+    width: 165px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 64px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 16px 28px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+
+
+@media(max-width:768px) {
+    .newsletter-container {
+        width: auto;
+        padding: 1rem;
+    }
+
+    .newsletter-container h1 {
+        margin-top: 30px;
+        width: auto;
+    }
+
+    .newsletter-container p {
+        width: auto;
+    }
+
+    .text-box {
+        width: auto;
+    }
+
+    .text-box input {
+        width: auto;
+    }
+
+    .text-box button {
+        width: auto;
+    }
+
+
+}
+
+
+/*Footer Section*/
+
+.footer {
+    background-color: #1E0849;
+}
+
+.footer-container {
+    padding: 64px 160px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area {
+    max-width: 244px;
+    max-height: 143px;
+    max-width: 100%;
+    max-height: auto;
+}
+
+.logo-name {
+    padding-bottom: 40px;
+}
+
+.logo-area p {
+    padding: 0px 10px 0px 0px;
+    color: #A197B4;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 606px;
+    max-width: 100%;
+    max-height: auto;
+    height: 119px;
+    margin-bottom: 40px;
+}
+
+.col-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.footer-col h4 {
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: Lora;
+    font-size: clamp(20px, 5vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-col p {
+    color: #A197B4;
+    /* D - normal-font-size */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.divider {
+    width: 1120px;
+    max-width: 100%;
+    min-width: 328px;
+    max-height: auto;
+    height: 0.5px;
+    background-color: #A197B4;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 2rem;
+}
+
+.footer-bottom {
+    color: #A197B4;
+    /* D - smaller-font-size */
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media  (max-width:768px){
+    .footer-container{
+        display:flex;
+        flex-direction:column;
+        padding: 3rem 24px;
+        justify-content: space-between;
+    }
+
+    .row-1{
+        flex-direction:column;
+        gap: 24px;
+    }
+
+
+    .logo-area {
+        width: auto;
+    }
+
+    .logo-name{
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .row-2 {
+        width: auto;
+        flex-direction:column;
+        gap: 24px;
+    }
+
+    .divider{
+        width: auto;
+    }
+
+    .row-3{
+        flex-direction:column;
+        gap: 24px;
+    }
+}
