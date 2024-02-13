@@ -1195,14 +1195,16 @@ header {
 /*Newsletter Section*/
 
 .newsletter-section {
-    background-color: var(--primary-background-color);
+   
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 14rem;
+    padding:3rem 0;
+  
 }
 
 .newsletter-container {
+    background-color: var(--primary-background-color);
     background: linear-gradient(125deg, #FF51AF, #8B52FF);
     /* Creating Gradient Colors */
     width: 992px;
@@ -1301,9 +1303,12 @@ header {
 
 
 @media(max-width:768px) {
+    .newsletter-section{
+        padding: 1rem 1rem;
+    }
     .newsletter-container {
         width: auto;
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
     .newsletter-container h1 {
@@ -1367,7 +1372,7 @@ header {
 .row-2 {
     display: flex;
     justify-content: space-between;
-    width: 606px;
+   
     max-width: 100%;
     max-height: auto;
     height: 119px;
@@ -1444,10 +1449,18 @@ header {
         flex-direction:column;
         padding: 3rem 24px;
         justify-content: space-between;
+        gap:15rem;
+    }
+
+    .content-footer{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
     }
 
     .row-1{
         flex-direction:column;
+        justify-content: space-between;
         gap: 24px;
     }
 
@@ -1469,6 +1482,8 @@ header {
 
     .divider{
         width: auto;
+       
+        flex-direction:column;
     }
 
     .row-3{
