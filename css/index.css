@@ -1080,6 +1080,7 @@ header {
         /* Stack elements vertically */
         flex-direction: column;
         align-items: center; /* Center-align the child elements */
+        gap:1rem;
     }
     .yoga-container-top {
         display: grid;
@@ -1102,10 +1103,7 @@ header {
         text-align: center;
     }
 
-    .yoga-container-top img.yoga-animation-top {
-        width: 100%; /* Each image takes full width of its grid column */
-        height: auto; /* Maintain aspect ratio */
-    }
+   
 
     .yoga-container-top img:nth-child(2) {
         grid-row: 2; /* Place second element (first image) in the second row */
@@ -1115,17 +1113,20 @@ header {
     .yoga-container-top img:nth-child(3) {
         grid-row: 2; /* Place third element (second image) in the second row */
         grid-column: 2; /* Place in the second column */
+        position:relative;
+        top: 3rem;
     }
 
-    .yoga-container-top img {
+    .yoga-container-top {
         width: calc(50% - 5px); /* Adjust width to fit two images in one line */
         margin-bottom: 0; /* Remove bottom margin if not needed */
         padding:1rem;
+        gap:1rem;
     }
     
     .follow-text-container {
         width: 100%; /* Full width */
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         order: -1; /* This will ensure the text container goes to the top */
     }
     
@@ -1136,17 +1137,33 @@ header {
         width:auto;
     }
 
-    .yoga-animation-bottom{
-        width:auto;
-       
-    }
-    
     .yoga-container-bottom {
         flex-direction: column; /* Keep the bottom images stacked */
         align-items: center;
         width: auto; /* Adjust based on your layout preference */
-        padding:1rem;
+        padding: 0 1rem;
+        gap:0;
+        
     }
+
+    .yoga-container-bottom img:nth-child(1){
+      
+        position:relative;
+        right:2rem;
+    }
+
+    .yoga-container-bottom img:nth-child(2){
+      
+        position:relative;
+        left:2rem;
+    }
+
+    .yoga-animation-bottom{
+        width:auto;
+        width:80%;
+    }
+    
+   
     
    
 }
