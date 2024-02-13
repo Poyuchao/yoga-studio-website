@@ -491,12 +491,12 @@ header {
 /* list-section*/
 .list-section {
     width: 100%;
-    background-color: var(--primary-background-color);
+   
     padding: 4rem 1rem;
     display: flex; /* Enable flexbox */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
-    transition: background-color 0.5s ease;
+ 
 }
 
 
@@ -511,6 +511,7 @@ header {
     gap: 3rem;
     position: relative;
     
+    transition: background-color 0.5s ease;
 }
 
 .section-num-image {
@@ -521,6 +522,7 @@ header {
     gap: 2rem;
     padding:1rem;
     min-width:180px;
+   
 }
 
 .section-num-image>h1 {
