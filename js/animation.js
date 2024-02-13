@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 }); // Trigger when 10% of the element is in view
 
     // Observe elements that should trigger animations on scroll
-    document.querySelectorAll('.follow-section-container, .yoga-animation-top, .yoga-animation-bottom, .follow-text-container').forEach(animationElement => {
+    document.querySelectorAll('.follow-section-container, .yoga-animation-top, .yoga-animation-bottom, .follow-text-container, .newsletter-section, .Routine-section, .health-section, .list-section').forEach(animationElement => {
         observer.observe(animationElement);
     });
 });

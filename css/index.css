@@ -20,13 +20,14 @@ body {
     --primary-background-color: #F5F0FF;
     --primary-text-color: #220953;
     --burger-menu-background: rgba(255, 255, 255, 0.30);
+    --footer-background:#1E0849;
 }
 
 body.night-mode {
     --primary-background-color: #14092A;
     --primary-text-color: #D1C0F1;
     --burger-menu-background: rgba(26, 26, 26, 0.30);
-
+    --footer-background:#14092A;
 }
 
 
@@ -1028,7 +1029,7 @@ header {
 }
 
 /* Adjusted for a slower fade-in animation */
-.follow-section-container, .yoga-animation-top, .yoga-animation-bottom, .follow-text-container{
+.follow-section-container, .yoga-animation-top, .yoga-animation-bottom, .follow-text-container, .newsletter-section, .Routine-section, .health-section, .list-section{
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 2s ease-in-out, transform 2s ease-in-out; /* Slower transition */
@@ -1073,6 +1074,7 @@ header {
 #day-night{
     animation: follow-botton-pulse  2s infinite;
 }
+
 
 /*review this*/
 @media (max-width:768px){
@@ -1169,3 +1171,332 @@ header {
 }
 
 
+
+/*Newsletter Section*/
+
+.newsletter-section {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 1rem;
+  
+}
+
+.newsletter-container {
+    background-color: var(--primary-background-color);
+    background: linear-gradient(125deg, #FF51AF, #8B52FF);
+    /* Creating Gradient Colors */
+    width: 992px;
+    max-width: 100%;
+    min-width: 328px;
+    height: auto;
+    text-align: center;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 14rem;
+}
+
+.newsletter-content {
+    width: 567px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+}
+
+.newsletter-container h1 {
+    color: #FFFFFF;
+    font-size: clamp(28px, 5vw, 56px);
+    width: 511px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+    text-align: center;
+    /* D - big-font-size */
+    font-family: Lora;
+    font-size: clamp(28px,5vw,56px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.newsletter-container p {
+    color: #FFFFFF;
+    font-size: 15px;
+    width: 567px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+}
+
+.text-box {
+    
+    border-radius: 40px;
+    position: relative;
+    margin-top: 20px;
+    width: 528px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.text-box input {
+    background-color: white; /* This ensures the input field has a white background */
+    width: 528px;
+    max-width: 100%;
+    min-width: 296px;
+    height: auto;
+    border-radius: 40px;
+    border:none;
+    
+    padding: 26px 10px;
+    margin-left: 24px;
+    margin-right: 28px;
+    font-size: 15px;
+}
+
+.text-box button {
+    background: linear-gradient(125deg, #FF51AF, #8B52FF);
+    /* Creating Gradient Colors */
+    border: 0;
+    width: 165px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 64px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding: 16px 28px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: #FFFFFF;
+}
+
+
+@media(max-width:768px) {
+    .newsletter-section{
+        padding: 1rem 1rem;
+    }
+    .newsletter-container {
+        width: auto;
+        padding: 1rem 2rem;
+    }
+
+    .newsletter-container h1 {
+        margin-top: 30px;
+        width: auto;
+    }
+
+    .newsletter-container p {
+        width: auto;
+    }
+
+    .text-box {
+        width: auto;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .text-box input {
+        width: auto;
+        margin-right:0;
+        margin-left:0;
+        padding: 13px 14px;
+    }
+
+    .text-box button {
+        width: auto;
+        position:relative;
+        right:0;
+
+    }
+
+}
+
+/*End of newsletter-section*/
+
+
+/*footer*/
+
+/*Footer Section*/
+
+.footer {
+    background-color: var(--footer-background);
+    transition: background-color 0.5s ease;
+}
+
+.footer-container {
+    padding: 64px 160px;
+}
+
+.row-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-area {
+    width: 244px;
+    height: auto;
+    max-width: 100%;
+    max-height: auto;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+
+.logo-area p {
+    padding: 0px 10px 0px 0px;
+    color: #A197B4;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.row-2 {
+    display: flex;
+    justify-content: space-between;
+    gap:4rem;
+    max-width: 100%;
+    max-height: auto;
+    height: 119px;
+}
+
+.col-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.footer-col h4 {
+    color: #FFF;
+    margin-bottom: 40px;
+   
+    font-family: Lora;
+    font-size: clamp(20px, 5vw, 24px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-col p {
+    color: #A197B4;
+    /* D - normal-font-size */
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.divider {
+    width: 1120px;
+    max-width: 100%;
+    min-width: 328px;
+    max-height: auto;
+    height: 0.5px;
+    background-color: #A197B4;
+    content: "";
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+.row-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 0;
+    gap:4rem;
+}
+
+.footer-bottom-content{
+    display:flex;
+    justify-content: space-between;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 2rem;
+}
+
+.footer-bottom {
+    color: #A197B4;
+    /* D - smaller-font-size */
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media  (max-width:768px){
+    
+    .footer{
+        padding:0;
+    }
+    
+    .footer-container{
+        display:flex;
+        flex-direction:column;
+        padding: 3rem 24px;
+        justify-content: space-between;
+        gap:15rem;
+      
+    }
+
+    .content-footer{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+
+    .row-1{
+        flex-direction:column;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .logo-area {
+        width: auto;
+    }
+
+    .logo-name{
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .row-2 {
+        width: auto;
+        flex-direction:column;
+        gap: 24px;
+    }
+
+    .divider{
+        width: auto;
+       
+        flex-direction:column;
+    }
+
+    .row-3{
+        flex-direction:column;
+        gap: 24px;
+    }
+}
+
+/*End of footer*/
