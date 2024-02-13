@@ -1071,6 +1071,8 @@ header {
     animation: follow-botton-pulse  2s infinite;
 }
 
+
+
 #day-night{
     animation: follow-botton-pulse  2s infinite;
 }
@@ -1283,6 +1285,7 @@ header {
     font-weight: 500;
     line-height: normal;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -1330,7 +1333,6 @@ header {
 /*End of newsletter-section*/
 
 
-/*footer*/
 
 /*Footer Section*/
 
@@ -1510,3 +1512,5 @@ header {
 }
 
 /*End of footer*/
+
+ 
