@@ -1497,6 +1497,16 @@ header {
         flex-direction:column;
         gap: 24px;
     }
+
+    .footer-bottom-content{
+        flex-direction: column;
+        gap:48px;
+        align-items: center;
+    }
+
+    .footer-bottom{
+        margin-right:1rem;
+    }
 }
 
 /*End of footer*/
