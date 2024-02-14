@@ -544,7 +544,10 @@ header {
     min-width: 230px;
 }
 
-
+.list-image:hover {
+    transition: transform .0.8s;
+    transform: scale(1.1);
+}
 
 .list-text-container {
     width: 50%;
@@ -687,6 +690,12 @@ header {
     padding: 1rem;
 
 }
+
+.health-hero-image:hover {
+    transition: transform 0.8s ease-in;
+    transform: scale(1.1);
+}
+
 
 .health-hero {
 
@@ -964,12 +973,22 @@ header {
     gap: 40px;
 }
 
+.yoga-container-top img:hover {
+    transition: transform .0.8s;
+    transform: scale(1.1);
+}
+
 .yoga-container-bottom {
     padding: 0 171px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+
+.yoga-container-bottom img:hover {
+    transition: transform .0.8s;
+    transform: scale(1.1);
 }
 
 .yoga-animation-top {
@@ -1374,7 +1393,7 @@ header {
     margin-bottom: 40px;
 }
 
-.col-area{
+.col-area {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1402,7 +1421,15 @@ header {
     line-height: normal;
 }
 
-.divider {
+.row-3 {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #A197B4;
+    /* Add a 1px solid line at the top */
+    padding: 56px 0;
+}
+
+/*.divider {
     width: 1120px;
     max-width: 100%;
     min-width: 328px;
@@ -1413,18 +1440,26 @@ header {
     margin: 0 auto;
     display: block;
     text-align: center;
-}
+}*/
 
-.row-3 {
-    display: flex;
-    justify-content: space-between;
-    padding: 56px 0;
+.social-icons {
+    width: 192px;
+    max-width: 100%;
+    min-width: 156px;
+    height: auto;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
-    margin-right: 2rem;
+    margin-right: 1rem;
+}
+
+.row-4 {
+    display: flex;
+    justify-content: space-between;
+    width: 264px;
+    max-width: 100%;
+    min-width: 261px;
+    height: auto;
 }
 
 .footer-bottom {
@@ -1438,17 +1473,25 @@ header {
 }
 
 
-@media  (max-width:768px){
-    .footer-container{
-        display:flex;
-        flex-direction:column;
+@media (max-width:768px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
         padding: 3rem 24px;
+        justify-content: space-between;
+        gap: 15rem;
+    }
+
+    .content-footer {
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
-    .row-1{
-        flex-direction:column;
-        gap: 24px;
+    .row-1 {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 40px;
     }
 
 
@@ -1456,23 +1499,35 @@ header {
         width: auto;
     }
 
-    .logo-name{
+    .logo-name {
         margin-bottom: 1rem;
         padding: 0;
     }
 
     .row-2 {
         width: auto;
-        flex-direction:column;
+        flex-direction: column;
         gap: 24px;
     }
 
-    .divider{
+    /*.divider {
+        width: auto;
+    }*/
+
+    .row-3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .social-icons {
         width: auto;
     }
 
-    .row-3{
-        flex-direction:column;
-        gap: 24px;
+    .row-4 {
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
     }
+
 }
