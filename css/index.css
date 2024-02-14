@@ -141,7 +141,7 @@ header {
     font-weight: 500;
 }
 
-.nav-bar nav ul li.nav-home a.nav-item {
+#home-color {
     background: linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%);
     /* Define your gradient here */
     -webkit-background-clip: text;
@@ -168,6 +168,7 @@ header {
     transition: 0.3s ease-in-out;
     width: 20px;
     height: 20px;
+    cursor:pointer;
 }
 
 /*end of header*/
