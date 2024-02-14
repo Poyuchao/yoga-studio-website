@@ -544,11 +544,6 @@ header {
     min-width: 230px;
 }
 
-.list-image:hover {
-    transition: transform .0.8s;
-    transform: scale(1.1);
-}
-
 .list-text-container {
     width: 50%;
     position: relative;
@@ -690,12 +685,6 @@ header {
     padding: 1rem;
 
 }
-
-.health-hero-image:hover {
-    transition: transform 0.8s ease-in;
-    transform: scale(1.1);
-}
-
 
 .health-hero {
 
@@ -997,6 +986,7 @@ header {
     height: auto;
     min-width: 140px;
 }
+
 
 .yoga-animation-bottom {
     width: 500px;
@@ -1355,10 +1345,9 @@ header {
 }
 
 
-/*Footer Section*/
-
 .footer {
-    background-color: #1E0849;
+    background-color: var(--footer-background);
+    transition: background-color 0.5s ease;
 }
 
 .footer-container {
@@ -1371,15 +1360,15 @@ header {
 }
 
 .logo-area {
-    max-width: 244px;
-    max-height: 143px;
+    width: 244px;
+    height: auto;
     max-width: 100%;
     max-height: auto;
+    display:flex;
+    flex-direction: column;
+    gap:40px;
 }
 
-.logo-name {
-    padding-bottom: 40px;
-}
 
 .logo-area p {
     padding: 0px 10px 0px 0px;
@@ -1391,14 +1380,13 @@ header {
 .row-2 {
     display: flex;
     justify-content: space-between;
-   
+    gap:4rem;
     max-width: 100%;
     max-height: auto;
     height: 119px;
-    margin-bottom: 40px;
 }
 
-.col-area {
+.col-area{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1406,9 +1394,9 @@ header {
 }
 
 .footer-col h4 {
-    color: #FFFFFF;
+    color: #FFF;
     margin-bottom: 40px;
-    position: relative;
+   
     font-family: Lora;
     font-size: clamp(20px, 5vw, 24px);
     font-style: normal;
@@ -1426,23 +1414,7 @@ header {
     line-height: normal;
 }
 
-.row-3 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #A197B4;
-    /* Add a 1px solid line at the top */
-    padding: 56px 0;
-}
-
-.row-3 {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #A197B4;
-    /* Add a 1px solid line at the top */
-    padding: 56px 0;
-}
-
-/*.divider {
+.divider {
     width: 1120px;
     max-width: 100%;
     min-width: 328px;
@@ -1453,26 +1425,25 @@ header {
     margin: 0 auto;
     display: block;
     text-align: center;
-}*/
+}
 
-.social-icons {
-    width: 192px;
-    max-width: 100%;
-    min-width: 156px;
-    height: auto;
+.row-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 0;
+    gap:4rem;
+}
+
+.footer-bottom-content{
+    display:flex;
+    justify-content: space-between;
 }
 
 .social-icons img {
-    margin-right: 1rem;
-}
-
-.row-4 {
-    display: flex;
-    justify-content: space-between;
-    width: 264px;
-    max-width: 100%;
-    min-width: 261px;
-    height: auto;
+    width: 24px;
+    height: 24px;
+    margin-right: 2rem;
 }
 
 .footer-bottom {
@@ -1485,61 +1456,70 @@ header {
     line-height: normal;
 }
 
-
-@media (max-width:768px) {
-    .footer-container {
-        display: flex;
-        flex-direction: column;
+@media  (max-width:768px){
+    
+    .footer{
+        padding:0;
+    }
+    
+    .footer-container{
+        display:flex;
+        flex-direction:column;
         padding: 3rem 24px;
         justify-content: space-between;
-        gap: 15rem;
+        gap:15rem;
+      
     }
 
-    .content-footer {
-        display: flex;
-        flex-direction: column;
+    .content-footer{
+        display:flex;
+        flex-direction:column;
         justify-content: space-between;
     }
 
-    .row-1 {
-        flex-direction: column;
+    .row-1{
+        flex-direction:column;
         justify-content: space-between;
-        gap: 40px;
+        gap: 24px;
     }
 
     .logo-area {
         width: auto;
     }
 
-    .logo-name {
+    .logo-name{
         margin-bottom: 1rem;
         padding: 0;
     }
 
     .row-2 {
         width: auto;
-        flex-direction: column;
+        flex-direction:column;
         gap: 24px;
     }
 
-    /*.divider {
+    .divider{
         width: auto;
-    }*/
+       
+        flex-direction:column;
+    }
 
-    .row-3 {
+    .row-3{
+        flex-direction:column;
+        gap: 24px;
+    }
+
+    .footer-bottom-content{
         flex-direction: column;
+        gap:48px;
         align-items: center;
-        gap: 40px;
     }
 
-    .social-icons {
-        width: auto;
+    .footer-bottom{
+        margin-right:1rem;
     }
-
-    .row-4 {
-        justify-content: space-between;
-        align-items: center;
-        width: auto;
-    }
-
 }
+
+/*End of footer*/
+
+ 
