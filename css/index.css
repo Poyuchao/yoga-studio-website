@@ -20,13 +20,14 @@ body {
     --primary-background-color: #F5F0FF;
     --primary-text-color: #220953;
     --burger-menu-background: rgba(255, 255, 255, 0.30);
+    --footer-background:#1E0849;
 }
 
 body.night-mode {
     --primary-background-color: #14092A;
     --primary-text-color: #D1C0F1;
     --burger-menu-background: rgba(26, 26, 26, 0.30);
-
+    --footer-background:#14092A;
 }
 
 
@@ -167,6 +168,7 @@ header {
     transition: 0.3s ease-in-out;
     width: 20px;
     height: 20px;
+    cursor:pointer;
 }
 
 /*end of header*/
@@ -490,7 +492,7 @@ header {
 /* list-section*/
 .list-section {
     width: 100%;
-    background-color: var(--primary-background-color);
+ 
     padding: 4rem 1rem;
     display: flex;
     /* Enable flexbox */
@@ -498,7 +500,7 @@ header {
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
-    transition: background-color 0.5s ease;
+
 }
 
 
@@ -513,6 +515,7 @@ header {
     gap: 3rem;
     position: relative;
 
+    transition: background-color 0.5s ease;
 }
 
 .section-num-image {
@@ -638,7 +641,6 @@ header {
         width: 100%;
         height: auto;
         min-width: 328px;
-        ;
         text-align: center;
     }
 
@@ -1110,6 +1112,7 @@ header {
         flex-direction: column;
         align-items: center;
         /* Center-align the child elements */
+        gap:1rem;
     }
 
     .yoga-container-top {
@@ -1158,6 +1161,8 @@ header {
         /* Place third element (second image) in the second row */
         grid-column: 2;
         /* Place in the second column */
+        position:relative;
+        top: 3rem;
     }
 
     .yoga-container-top img {
@@ -1166,12 +1171,13 @@ header {
         margin-bottom: 0;
         /* Remove bottom margin if not needed */
         padding: 1rem;
+        gap:1rem;
     }
 
     .follow-text-container {
         width: 100%;
         /* Full width */
-        padding: 2rem 1rem;
+        padding: 1rem 1rem;
         order: -1;
         /* This will ensure the text container goes to the top */
     }
@@ -1184,10 +1190,6 @@ header {
         width: auto;
     }
 
-    .yoga-animation-bottom {
-        width: auto;
-
-    }
 
     .yoga-container-bottom {
         flex-direction: column;
@@ -1195,7 +1197,25 @@ header {
         align-items: center;
         width: auto;
         /* Adjust based on your layout preference */
-        padding: 1rem;
+        padding: 0 1rem;
+        gap:0;
+    }
+
+    .yoga-container-bottom img:nth-child(1){
+      
+        position:relative;
+        right:2rem;
+    }
+
+    .yoga-container-bottom img:nth-child(2){
+      
+        position:relative;
+        left:2rem;
+    }
+
+    .yoga-animation-bottom{
+        width:auto;
+        width:80%;
     }
 
 
@@ -1208,7 +1228,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding:3rem 0;
+    padding:3rem 1rem;
   
 }
 
@@ -1251,6 +1271,13 @@ header {
     max-width: 100%;
     min-width: 296px;
     height: auto;
+    text-align: center;
+    /* D - big-font-size */
+    font-family: Lora;
+    font-size: clamp(28px,5vw,56px);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
 }
 
@@ -1264,7 +1291,7 @@ header {
 }
 
 .text-box {
-    background: #FFFFFF;
+
     border-radius: 40px;
     position: relative;
     margin-top: 20px;
@@ -1276,14 +1303,15 @@ header {
 
 
 .text-box input {
+    background-color: white; /* This ensures the input field has a white background */
     width: 528px;
     max-width: 100%;
     min-width: 296px;
     height: auto;
     border-radius: 40px;
-    border: 0;
-    background: none;
-    padding: 26px 0;
+    border:none;
+    
+    padding: 26px 10px;
     margin-left: 24px;
     margin-right: 28px;
     font-size: 15px;
@@ -1307,6 +1335,7 @@ header {
     font-weight: 500;
     line-height: normal;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -1331,19 +1360,31 @@ header {
 
     .text-box {
         width: auto;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
     }
 
     .text-box input {
         width: auto;
+        margin-right:0;
+        margin-left:0;
+        padding: 13px 14px;
     }
 
     .text-box button {
         width: auto;
+        position:relative;
+        right:0;
     }
-
 
 }
 
+/*End of newsletter-section*/
+
+
+
+/*Footer Section*/
 
 .footer {
     background-color: var(--footer-background);
