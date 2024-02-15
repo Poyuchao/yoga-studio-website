@@ -1,26 +1,29 @@
-Yoga Studio Website
-Welcome to our Yoga Studio Website repository! This project is a collaborative effort by George and Evelyn to create a simple, yet effective online presence for a yoga studio. Our goal is to provide potential and current clients with all the information they need about our yoga classes, benefits, and more, through a website that's accessible on any device.
+# Yoga Studio Website
 
-Project Overview
-Our website is designed to be user-friendly, informative, and responsive. We've utilized basic web development technologies to ensure the site is easily navigable and appealing.
+## Welcome to the Yoga Studio Website Repository!
 
-Technologies Used
-HTML: Structures the content of our website, ensuring a logical flow of information.
-CSS: Styles our content, making the website visually appealing across different devices.
-JavaScript (JS): Adds interactivity to our website, enhancing the user experience.
-Features
-Responsive Design: Our website is crafted to look great and function well on desktops, tablets, and smartphones. We've carefully tested and adjusted our layouts to ensure compatibility across a wide range of screen sizes.
-Class Information: Visitors can find detailed information about the yoga classes we offer, including class sizes, types.
-Benefits of Yoga: We've included a section that outlines the various benefits yoga has on the body and mind, encouraging visitors to sign up for a class.
-Getting Started
-To get a local copy up and running, follow these simple steps:
+This project is a collaborative effort by George and Evelyn, aiming to create a simple, yet effective online presence for a yoga studio. Our goal is to provide potential and current clients with comprehensive information about our yoga classes, their benefits, and more, in an accessible format on any device.
 
-Clone the repository to your local machine:
-bash
-Copy code
-git clone https://github.com/Poyuchao/yoga-studio-website.git
-Open the index.html file in your preferred web browser to view the website.
-No additional setup is required, as the website runs purely on HTML, CSS, and JS without any dependencies on frameworks or libraries.
+## Project Overview
 
-Feedback
-We welcome your feedback and suggestions! Please feel free to open an issue or submit a pull request if you have any improvements or ideas to share.
+Our website is crafted to be user-friendly, informative, and responsive. We've employed basic web development technologies to ensure the site is easily navigable and visually appealing.
+
+### Technologies Used
+
+- **HTML**: Provides the structure, ensuring a logical flow of information.
+- **CSS**: Styles the content, enhancing visual appeal across devices.
+- **JavaScript (JS)**: Adds interactivity, improving the user experience.
+
+### Features
+
+- **Responsive Design**: The website is designed to perform well on desktops, tablets, and smartphones, with layouts tested and adjusted for wide compatibility.
+- **Class Information**: Offers visitors detailed information about available yoga classes, including class sizes and types.
+- **Benefits of Yoga**: Highlights the various benefits yoga offers for the body and mind, encouraging visitors to sign up.
+
+## Getting Started
+
+To view the website locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Poyuchao/yoga-studio-website.git
