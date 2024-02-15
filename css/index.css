@@ -288,6 +288,7 @@ header {
     border-radius: 64px;
     background: var(--gradient-color, linear-gradient(73deg, #FF52AF 11.6%, #9F53FF 83.86%));
     border: none;
+    cursor: pointer;
 }
 
 
@@ -686,6 +687,14 @@ header {
    
 }
 
+.yoga-container-top img {
+    transition: transform 1.2s ease-in-out; /* Correct duration and add easing */
+}
+
+.yoga-container-top img:hover {
+    transform: scale(1.1);
+}
+
 .health-hero{
    
    max-width:100%;
@@ -953,6 +962,7 @@ header {
     justify-content:center;
     align-items: center;
     gap:40px;
+
 }
 
 .yoga-container-bottom{
@@ -962,6 +972,23 @@ header {
     align-items: center;
     gap:40px;
 }
+
+.yoga-container-bottom img {
+    transition: transform 1.2s ease-in-out; /* Correct duration and add easing */
+}
+
+.yoga-container-bottom img:hover {
+    transform: scale(1.1);
+}
+
+.yoga-container-top img {
+    transition: transform 1.2s ease-in-out; /* Correct duration and add easing */
+}
+
+.yoga-container-top img:hover {
+    transform: scale(1.1);
+}
+
 
 .yoga-animation-top{
     width:280px;
@@ -975,6 +1002,7 @@ header {
     max-width: 100%;
     height:auto;
     min-width:230px;
+    
 }
 
 .follow-text-container{
@@ -1043,6 +1071,7 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
 /* Pulse animation for the each button */
