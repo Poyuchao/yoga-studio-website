@@ -27,3 +27,6 @@ To view the website locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Poyuchao/yoga-studio-website.git
+
+2  Open the index.html file in your preferred web browser.
+   No additional setup is required, as the website relies solely on HTML, CSS, and JS, without any frameworks or libraries.
